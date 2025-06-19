@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Hostel Rooms Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pg.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="text-2xl font-bold text-blue-600">SB PG Ladies</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+                <a href="#listings" class="text-gray-600 hover:text-blue-600">Listings</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="flex flex-col space-y-4 px-4 py-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+                <a href="#listings" class="text-gray-600 hover:text-blue-600">Listings</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Find Your Perfect PG Rooms</h1>
+            <p class="text-lg mb-8">Search and book comfortable, affordable PG accommodations.</p>
+            <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6 text-gray-800">
+                <form class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <input type="text" placeholder="Enter no of members" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <select class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Budget</option>
+                        <option>₹5,000 - ₹10,000</option>
+                        <option>₹10,000 - ₹15,000</option>
+                    </select>
+                    <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">🏠</div>
+                    <h3 class="text-xl font-semibold mb-2">Verified Listings</h3>
+                    <p class="text-gray-600">All rooms are verified for safety and quality.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">💰</div>
+                    <h3 class="text-xl font-semibold mb-2">Affordable Pricing</h3>
+                    <p class="text-gray-600">Find options that fit your budget.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">📞</div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">We're here to help anytime.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">🌐</div>
+                    <h3 class="text-xl font-semibold mb-2">24/7</h3>
+                    <p class="text-gray-600">Free Wifi</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">🌓</div>
+                    <h3 class="text-xl font-semibold mb-2">Extra Permission</h3>
+                    <p class="text-gray-600">Allow upto night 10:00 PM</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-3xl mb-4">💸</div>
+                    <h3 class="text-xl font-semibold mb-2">Real!</h3>
+                    <p class="text-gray-600">Adv Payment Must and Refund Guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Preview -->
+    <section id="listings" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Explore PG Rooms</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">3BHK Flat 1 Room Attached Washroom</h3>
+                        <p class="text-gray-600 mb-2">₹8,000/month</p>
+                        <p class="text-gray-500 text-sm">Wi-Fi, AC, Meals Included if(AC then 2000/- extra charge per month in Total Bill)</p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Details</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">3BHK Flat Hall(only) Common Washroom</h3>
+                        <p class="text-gray-600 mb-2">₹5,000/month</p>
+                        <p class="text-gray-500 text-sm">Wi-Fi, Non-AC, Meals Included if(AC then 2000/- extra charge per month in Total Bill)</p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Details</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">More Privacy (Single Room)</h3>
+                        <p class="text-gray-600 mb-2">₹10,000/month</p>
+                        <p class="text-gray-500 text-sm">Wi-Fi, Security, Meals if(AC then 2000/- extra charge per month in Total Bill)</p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="text-2xl font-bold mb-4">SB PG Ladies</div>
+        <p class="mb-4">Contact us: support@pgfinder.com | +91 123-456-7890</p>
+        <div class="flex justify-center space-x-6 bg-gradient-to-r from-blue-500 to-indigo-600">
+            <a href="#" class="text-gray-400 hover:text-white social-icon">
+                <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white social-icon">
+                <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white social-icon">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="pg.js"></script>
+</body>
+</html>
